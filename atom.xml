@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>名之辈</title>
-  <icon>http://example.com/icon.png</icon>
+  <icon>https://bbstom.github.io/icon.png</icon>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://bbstom.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://bbstom.github.io/"/>
   <updated>2024-08-18T13:55:53.000Z</updated>
-  <id>http://example.com/</id>
+  <id>https://bbstom.github.io/</id>
   
   <author>
     <name>名之辈</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>最新收集telegram常用机器人和群组100+</title>
-    <link href="http://example.com/posts/9f601117/"/>
-    <id>http://example.com/posts/9f601117/</id>
+    <link href="https://bbstom.github.io/posts/9f601117/"/>
+    <id>https://bbstom.github.io/posts/9f601117/</id>
     <published>2024-08-18T13:55:53.000Z</published>
     <updated>2024-08-18T13:55:53.000Z</updated>
     
@@ -34,17 +34,17 @@
     
     
     
-    <category term="把玩系列" scheme="http://example.com/categories/%E6%8A%8A%E7%8E%A9%E7%B3%BB%E5%88%97/"/>
+    <category term="把玩系列" scheme="https://bbstom.github.io/categories/%E6%8A%8A%E7%8E%A9%E7%B3%BB%E5%88%97/"/>
     
     
-    <category term="telgram" scheme="http://example.com/tags/telgram/"/>
+    <category term="telgram" scheme="https://bbstom.github.io/tags/telgram/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/posts/16107/"/>
-    <id>http://example.com/posts/16107/</id>
+    <link href="https://bbstom.github.io/posts/16107/"/>
+    <id>https://bbstom.github.io/posts/16107/</id>
     <published>2024-08-17T17:14:33.322Z</published>
     <updated>2024-08-18T08:15:42.534Z</updated>
     
