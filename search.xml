@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>修改hexo博客butterfly背景及透明度</title>
+      <link href="/posts/40d24b29/"/>
+      <url>/posts/40d24b29/</url>
+      
+        <content type="html"><![CDATA[<h2 id="修改背景色"><a href="#修改背景色" class="headerlink" title="修改背景色"></a>修改背景色</h2><p>修改butterfly主题的配置文件：_config.butterfly.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Website Background (設置網站背景)</span><br><span class="line"># can set it to color or image (可設置圖片 或者 顔色)</span><br><span class="line"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span><br><span class="line">background: &#x27;linear-gradient(270deg, #00c1a5, #2680eb)&#x27;</span><br><span class="line"></span><br><span class="line"># Footer Background （footer背景）</span><br><span class="line">footer_bg: &#x27;linear-gradient(270deg, #00c1a5, #2680eb)&#x27;</span><br></pre></td></tr></table></figure><hr><h2 id="修改主题半透明"><a href="#修改主题半透明" class="headerlink" title="修改主题半透明"></a>修改主题半透明</h2><h3 id="创建css文件"><a href="#创建css文件" class="headerlink" title="创建css文件"></a>创建css文件</h3><p>在\themes\butterfly\source\css目录下创建一个css文件，名称为transpancy.css，拷贝以下代码到文件<br>其中的 .1 .7为透明度的数值，可自行修改</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">/* 文章页背景 */</span><br><span class="line">.layout_post&gt;#post &#123;</span><br><span class="line">    /* 以下代表透明度为0.7 可以自行修改*/</span><br><span class="line">    background: rgba(255, 255, 255, .7);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 所有页面背景 */</span><br><span class="line">#aside_content .card-widget,</span><br><span class="line">#recent-posts&gt;.recent-post-item,</span><br><span class="line">.layout_page&gt;div:first-child:not(.recent-posts),</span><br><span class="line">.layout_post&gt;#page,</span><br><span class="line">.layout_post&gt;#post,</span><br><span class="line">.read-mode .layout_post&gt;#post &#123;</span><br><span class="line">    /* 以下代表透明度为0.9 */</span><br><span class="line">    background: rgba(255, 255, 255, .7);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*侧边卡片的透明度 */</span><br><span class="line">:root &#123;</span><br><span class="line">    --card-bg: rgba(255, 255, 255, .7);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 页脚透明 */</span><br><span class="line">#footer &#123;</span><br><span class="line">    /* 以下代表透明度为0.1*/</span><br><span class="line">    background: rgba(255, 255, 255, .1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="主题引入新建的css文件"><a href="#主题引入新建的css文件" class="headerlink" title="主题引入新建的css文件"></a>主题引入新建的css文件</h3><p>找到_config.butterfly.yml文件的inject位置，在head引入刚才新建的css，如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">    - &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/transpancy.css&quot;&gt;</span><br></pre></td></tr></table></figure><hr><h2 id="重新生成页面"><a href="#重新生成页面" class="headerlink" title="重新生成页面"></a>重新生成页面</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">清除缓存</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">重新生成文件</span><br><span class="line">hexo gen</span><br><span class="line"></span><br><span class="line">启动本地hexo，使用localhost:4000查看效果</span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line">没有问题就可以上传到github</span><br><span class="line">hexo dep</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo美化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>最新收集telegram常用机器人和群组100+</title>
       <link href="/posts/9f601117/"/>
       <url>/posts/9f601117/</url>
