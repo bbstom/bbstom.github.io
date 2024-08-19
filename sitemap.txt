@@ -1,0 +1,8 @@
+http://example.com/posts/9f601117/
+http://example.com/posts/16107/
+http://example.com/link/index.html
+http://example.com/categories/index.html
+http://example.com/tags/index.html
+http://example.com/
+http://example.com/tags/telgram/
+http://example.com/categories/%E6%8A%8A%E7%8E%A9%E7%B3%BB%E5%88%97/
