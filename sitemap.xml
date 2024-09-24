@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://bbstom.github.io/posts/61db4ab4.html</loc>
+    <loc>https://bbstom.github.io/posts/40d24b29.html</loc>
     
     <lastmod>2024-08-18</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://bbstom.github.io/posts/40d24b29.html</loc>
+    <loc>https://bbstom.github.io/posts/61db4ab4.html</loc>
     
     <lastmod>2024-08-18</lastmod>
     
@@ -81,6 +81,13 @@
   </url>
   
   <url>
+    <loc>https://bbstom.github.io/tags/hexo%E7%BE%8E%E5%8C%96/</loc>
+    <lastmod>2024-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://bbstom.github.io/tags/TRX/</loc>
     <lastmod>2024-09-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -89,13 +96,6 @@
   
   <url>
     <loc>https://bbstom.github.io/tags/USDT/</loc>
-    <lastmod>2024-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bbstom.github.io/tags/hexo%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2024-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -111,14 +111,14 @@
   </url>
   
   <url>
-    <loc>https://bbstom.github.io/categories/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
+    <loc>https://bbstom.github.io/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bbstom.github.io/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://bbstom.github.io/categories/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
     <lastmod>2024-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
